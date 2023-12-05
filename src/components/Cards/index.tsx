@@ -9,7 +9,7 @@ const Cards = ({ list }: { list: any }) => {
         w: "9/12",
         mx: "auto",
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: "space-around",
         justifyItems: "start",
         p: "20px",
         flexWrap: "wrap",
@@ -18,7 +18,7 @@ const Cards = ({ list }: { list: any }) => {
       {list ? (
         <>
           {list.map((item: any) => (
-            <Card item={item} key={`Card_${item._id["$oid"]}`} />
+            <Card item={item} key={`Card_${item.uuid}`} />
           ))}
         </>
       ) : (

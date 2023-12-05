@@ -13,6 +13,7 @@ export default defineConfig({
 
   // Files to exclude
   exclude: [],
+  jsxFramework: "react",
 
   // The output directory for your css system
   outdir: "styled-system",

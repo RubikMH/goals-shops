@@ -7,8 +7,17 @@ const Home = async () => {
 
   return (
     <>
-      <Header />
+      <Header route="Home" />
       <div className={css({ fontSize: "2xl" })}>
+        <h1
+          className={css({
+            textAlign: "center",
+            fontSize: "48px",
+            fontWeight: "bold",
+          })}
+        >
+          Main Skills
+        </h1>
         <Cards list={res.payload} />
       </div>
     </>

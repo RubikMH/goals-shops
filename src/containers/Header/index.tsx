@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "../../../styled-system/css";
 import Cards from "@/components/Cards";
-const Header = () => {
+const Header = ({ route }: { route: string }) => {
   return (
     <header className={css({ px: "2rem", py: "1rem" })}>
       <nav>
@@ -22,8 +22,15 @@ const Header = () => {
             <li
               className={css({
                 cursor: "pointer",
-                bg: { base: "#F3EEEA", _hover: "#776B5D" },
-                color: { base: "#181818", _hover: "#F3EEEA" },
+                // bg: { base: "#F3EEEA", _hover: "#776B5D" },
+                bg:
+                  item.text == route
+                    ? "#776B5D"
+                    : { base: "#F3EEEA", _hover: "#776B5D" },
+                color:
+                  item.text == route
+                    ? "#F3EEEA"
+                    : { base: "#181818", _hover: "#F3EEEA" },
                 py: "8px",
                 w: "20%",
                 textAlign: "center",
