@@ -25,7 +25,7 @@ const Card = ({ item }: { item: any }) => {
               h: "250px",
               objectFit: "cover",
             })}
-            src={`http://127.0.0.1:8000${item.image}`}
+            src={`http://localhost:8080${item.image}`}
             alt={item.title}
           />
         </div>

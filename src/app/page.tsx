@@ -3,7 +3,7 @@ import getData from "../utils/getData";
 import { css } from "../../styled-system/css";
 import Cards from "@/components/Cards";
 const Home = async () => {
-  const res = await getData("get_categories");
+  const res = await getData("get-categories");
 
   return (
     <>
